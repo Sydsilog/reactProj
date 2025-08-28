@@ -4,9 +4,9 @@ const home = () => {
   return (
     <div className=" bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,1)),url('/img/search.jpg')] bg-cover  h-[200vh] ">
       <NavBar />
-      <div id="upper" className="w-full h-screen">
+      <div id="upper" className="w-full h-screen flex">
         <div
-          id="rightUpper"
+          id="upperLeft"
           className="w-2/4  h-full flex flex-col justify-center items-center"
         >
           <div
@@ -20,6 +20,15 @@ const home = () => {
             id="search"
             className="w-4/5 h-10 bg-white rounded-3xl border-2 pl-5"
           />
+        </div>
+        <div
+          id="upperRight"
+          className="w-2/4  h-full  flex justify-center items-center"
+        >
+          <div
+            id="FloatDonut"
+            className="bg-[url(/img/donut.png)] bg-cover h-120 w-120"
+          ></div>
         </div>
       </div>
       <div className="bg-green-400 h-screen"></div>
